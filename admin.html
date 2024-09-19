@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    
+</head><style>
+	#admin-dashboard {
+		padding: 20px;
+	}
+	
+	#admin-section {
+		margin-top: 20px;
+	}
+	
+	#product-form {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#product-form label {
+		margin-top: 10px;
+	}
+	
+	#product-form input {
+		padding: 10px;
+		margin-top: 5px;
+		border-radius: 5px;
+		border: 1px solid #ddd;
+	}
+	
+	#product-form button {
+		margin-top: 20px;
+		padding: 10px;
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	#product-list {
+		margin-top: 20px;
+	}
+	
+	.product-item {
+		border: 1px solid #ddd;
+		padding: 10px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+</style>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div id="navbar-logo">
+                <img src="https://img.freepik.com/free-vector/flat-design-clothing-store-logo-design_23-2149496415.jpg"
+                    alt="your store">
+            </div>
+            <div id="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="admin-dashboard">
+        <h1>Admin Dashboard</h1>
+        <div id="admin-section">
+            <h2>Manage Products</h2>
+            <form id="product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+                <label for="product-price">Price:</label>
+                <input type="number" id="product-price" name="product-price" required>
+                <label for="product-category">Category:</label>
+                <input type="text" id="product-category" name="product-category" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <div id="product-list">
+                <!-- Product items will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="ecom.js"></script>
+</body>
+
+</html>
